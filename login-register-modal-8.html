@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<!-- <link href="https://harnishdesign.net/demo/html/oxyy/images/favicon.png" rel="icon" /> -->
+<title>TeamUP - Login and Register</title>
+<meta name="description" content="Login and Register Form Html Template">
+<meta name="author" content="harnishdesign.net">
+
+<!-- Web Fonts
+=========================== -->
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900' type='text/css'>
+
+<!-- Stylesheet
+=========================== -->
+<link rel="stylesheet" type="text/css" href="https://harnishdesign.net/demo/html/oxyy/vendor/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="https://harnishdesign.net/demo/html/oxyy/vendor/font-awesome/css/all.min.css" />
+<link rel="stylesheet" type="text/css" href="https://harnishdesign.net/demo/html/oxyy/css/stylesheet.css" />
+<!-- Colors Css -->
+<link id="color-switcher" type="text/css" rel="stylesheet" href="https://harnishdesign.net/demo/html/oxyy/css/color-green.css" />
+</head>
+<body>
+
+<!-- Preloader -->
+<div class="preloader">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- Preloader End -->
+
+<div id="main-wrapper" class="oxyy-login-register">
+  <div class="container">
+    <div class="row min-vh-100">
+      <div class="col-12 text-center m-auto py-4">
+        <!-- <div class="logo mb-4"> <a href="https://harnishdesign.net/demo/html/oxyy/index.html" title="Oxyy"><img src="https://harnishdesign.net/demo/html/oxyy/images/logo-lg.png" alt="Oxyy"></a> </div> -->
+        <h4 class=" text-white d-inline-block rounded px-4 py-2 mb-4" style="background-color: #6c5ce7;">TeamUp</h4>
+        <h3 class="fw-600 mb-3">Login and Register here!</h3>
+        <p class="lead mb-4">Clicking the button below for open in Modal.</p>
+        <div class="row justify-content-center g-3">
+		  <div class="col-auto">
+			<a class="btn btn-primary rounded-pill" href="#" data-bs-toggle="modal" data-bs-target="#login-modal">Log In</a>
+		  </div>
+		  <div class="col-auto">
+			<a class="btn btn-dark rounded-pill" href="#" data-bs-toggle="modal" data-bs-target="#register-modal">Register</a>
+		  </div>
+		  <div class="col-auto">
+			<a class="btn btn-primary rounded-pill" href="#" data-bs-toggle="modal" data-bs-target="#forgot-password-modal">Forgot</a>
+		  </div>
+		  <div class="col-auto">
+			<a class="btn btn-dark rounded-pill" href="#" data-bs-toggle="modal" data-bs-target="#otp-modal">OTP</a>
+		  </div>
+		</div>
+	 </div>
+    </div>
+    
+    <!-- Login Modal
+    =========================== -->
+    <div id="login-modal" class="modal fade oxyy-login-register" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+        <div class="modal-content border-0">
+          <div class="modal-body p-0">
+            <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 me-sm-n4 mt-sm-n4" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!-- Login Form
+            ====================== -->
+            <div class="row py-5">
+              <div class="col-10 col-sm-8 mx-auto">
+                <h2 class="text-center fw-600 mb-4">Login</h2>
+                <form id="loginForm" class="" method="post">
+                  <div class="mb-3">
+                    <input type="email" class="form-control border-2 rounded-pill px-4" id="emailAddress" required placeholder="Enter Email">
+                  </div>
+                  <div class="mb-3">
+                    <input type="password" class="form-control border-2 rounded-pill px-4" id="loginPassword" required placeholder="Enter Password">
+                  </div>
+                  <div class="text-2 text-center"><a class="link-dark" href="#" data-bs-toggle="modal" data-bs-target="#forgot-password-modal" data-bs-dismiss="modal">Forgot Password ?</a></div>
+                  <div class="d-grid mt-4 mb-3">
+					<button class="btn btn-primary rounded-pill" type="submit">Log in</button>
+				  </div>
+                </form>
+                <p class="text-2 text-dark fw-500 text-center mb-3">OR</p>
+                <div class="d-grid my-3 gap-3">
+					<button type="button" class="btn btn-facebook rounded-pill shadow-none d-flex align-items-center justify-content-center py-1 px-3"><span class="text-6 float-start"><i class="fab fa-facebook"></i></span><span class="mx-auto">Continue with Facebook</span></button>
+					<button type="button" class="btn btn-google rounded-pill shadow-none d-flex align-items-center justify-content-center py-1 px-3"><span class="text-6 float-start"><i class="fab fa-google"></i></span><span class="mx-auto">Continue with Google</span></button>
+				</div>
+                <p class="text-2 text-center text-dark fw-500 mb-0">Not on TeamUP yet? <a href="#" data-bs-toggle="modal" data-bs-target="#register-modal" data-bs-dismiss="modal">Sign up</a></p>
+              </div>
+            </div>
+            <!-- Login Form End --> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Login Modal End --> 
+    
+    <!-- Register Modal
+    =========================== -->
+    <div id="register-modal" class="modal fade oxyy-login-register" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+        <div class="modal-content border-0">
+          <div class="modal-body p-0">
+            <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 me-sm-n4 mt-sm-n4" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!-- Register Form
+            ====================== -->
+            <div class="row py-5">
+              <div class="col-10 col-sm-8 mx-auto">
+                <h2 class="text-center fw-600 mb-4">Sign Up</h2>
+                <form id="loginForm" class="" method="post">
+                  <div class="mb-3">
+                    <input type="text" class="form-control border-2 rounded-pill px-4" id="fullName" required placeholder="Enter Your Name">
+                  </div>
+                  <div class="mb-3">
+                    <input type="email" class="form-control border-2 rounded-pill px-4" id="emailAddress" required placeholder="Enter Your Email">
+                  </div>
+                  <div class="mb-3">
+                    <input type="password" class="form-control border-2 rounded-pill px-4" id="loginPassword" required placeholder="Enter Password">
+                  </div>
+                  <div class="d-grid mb-3">
+					<button class="btn btn-primary rounded-pill" type="submit">Sign Up</button>
+				  </div>
+                </form>
+                <p class="text-2 text-dark fw-500 text-center mb-3">OR</p>
+                <div class="d-grid my-3 gap-3">
+					<button type="button" class="btn btn-facebook rounded-pill shadow-none d-flex align-items-center justify-content-center py-1 px-3"><span class="text-6 float-start"><i class="fab fa-facebook"></i></span><span class="mx-auto">Continue with Facebook</span></button>
+					<button type="button" class="btn btn-google rounded-pill shadow-none d-flex align-items-center justify-content-center py-1 px-3"><span class="text-6 float-start"><i class="fab fa-google"></i></span><span class="mx-auto">Continue with Google</span></button>
+				</div>
+                <p class="text-1 text-center">By continuing, you agree to TeamUP <a href="#" class="link-dark fw-500">Terms of Service</a>, <a href="#" class="link-dark fw-500">Privacy policy</a>.</p>
+                <hr class="w-50 mx-auto">
+                <p class="text-2 text-center text-dark fw-500 mb-0">Already a member? <a href="#" data-bs-toggle="modal" data-bs-target="#login-modal" data-bs-dismiss="modal">Login</a></p>
+              </div>
+            </div>
+            <!-- Register Form End --> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Register Modal End --> 
+    
+    <!-- OTP Modal
+    =========================== -->
+    <div id="otp-modal" class="modal fade oxyy-login-register" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+        <div class="modal-content border-0">
+          <div class="modal-body p-0">
+            <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 me-sm-n4 mt-sm-n4" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!-- OTP Form
+            =========================== -->
+            <div class="row py-5">
+              <div class="col-10 col-sm-8 mx-auto">
+                <h2 class="text-center fw-600 mb-4">Validate OTP</h2>
+                <p class="text-center"><img class="img-fluid" src="https://harnishdesign.net/demo/html/oxyy/images/otp-icon.png" alt="verification"></p>
+                <p class="text-muted text-center mb-4">Enter the verification code we sent to <br>
+                  <span class="text-dark text-4">+1*******179</span></p>
+                <form id="otp-screen" method="post">
+                  <div class="row g-2">
+                    <div class="col">
+                      <input type="text" class="form-control border-2 rounded-pill text-center text-6 px-2 py-2" maxlength="1" required autocomplete="off">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control border-2 rounded-pill text-center text-6 px-2 py-2" maxlength="1" required autocomplete="off">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control border-2 rounded-pill text-center text-6 px-2 py-2" maxlength="1" required autocomplete="off">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control border-2 rounded-pill text-center text-6 px-2 py-2" maxlength="1" required autocomplete="off">
+                    </div>
+                  </div>
+                  <div class="d-grid my-4">
+					<button class="btn btn-primary rounded-pill" type="submit">Verify</button>
+				  </div>
+                </form>
+                <p class="text-2 text-center">Didn't get the code? <a href="#">Resend it</a></p>
+                <hr class="w-50 mx-auto">
+                <p class="text-2 text-center mb-0"><a href="#">Call me</a></p>
+              </div>
+            </div>
+            <!-- OTP Form End --> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- OTP Modal End --> 
+    
+    <!-- Forgot Password Modal
+    =========================== -->
+    <div id="forgot-password-modal" class="modal fade oxyy-login-register" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+        <div class="modal-content border-0">
+          <div class="modal-body p-0">
+            <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 me-sm-n4 mt-sm-n4" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!-- Forgot Password Form
+            =========================== -->
+            <div class="row py-5">
+              <div class="col-10 col-sm-8 mx-auto">
+                <h2 class="text-center fw-600 mb-4">Reset Password</h2>
+                <p class="text-center text-muted">Enter the email address or mobile number associated with your account.</p>
+                <form id="forgotForm" method="post">
+                  <div class="mb-3">
+                    <input type="text" class="form-control border-2 rounded-pill px-4" id="emailAddress" required placeholder="Enter Email or Mobile Number">
+                  </div>
+                  <div class="d-grid my-4">
+					<button class="btn btn-primary rounded-pill" type="submit">Reset Password</button>
+				  </div>
+                </form>
+                <p class="text-2 text-center text-dark fw-500 mb-0">Return to <a href="#" data-bs-toggle="modal" data-bs-target="#login-modal" data-bs-dismiss="modal">Log In</a></p>
+              </div>
+            </div>
+            <!-- Forgot Password Form End --> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Forgot Password Modal End --> 
+    
+  </div>
+</div>
+
+<!-- Styles Switcher -->
+<div id="styles-switcher" class="left">
+  <h5>Color Switcher</h5>
+  <hr>
+  <ul class="mb-0">
+    <li class="blue" data-bs-toggle="tooltip" title="Blue" data-path="#"></li>
+    <li class="indigo" data-bs-toggle="tooltip" title="Indigo" data-path="https://harnishdesign.net/demo/html/oxyy/css/color-indigo.css"></li>
+    <li class="purple" data-bs-toggle="tooltip" title="Purple" data-path="https://harnishdesign.net/demo/html/oxyy/css/color-purple.css"></li>
+    <li class="pink" data-bs-toggle="tooltip" title="Pink" data-path="https://harnishdesign.net/demo/html/oxyy/css/color-pink.css"></li>
+    <li class="red" data-bs-toggle="tooltip" title="Red" data-path="https://harnishdesign.net/demo/html/oxyy/css/color-red.css"></li>
+    <li class="orange" data-bs-toggle="tooltip" title="Orange" data-path="https://harnishdesign.net/demo/html/oxyy/css/color-orange.css"></li>
+    <li class="yellow" data-bs-toggle="tooltip" title="Yellow" data-path="https://harnishdesign.net/demo/html/oxyy/css/color-yellow.css"></li>
+    <li class="teal" data-bs-toggle="tooltip" title="Teal" data-path="https://harnishdesign.net/demo/html/oxyy/css/color-teal.css"></li>
+    <li class="green" data-bs-toggle="tooltip" title="Green" data-path="https://harnishdesign.net/demo/html/oxyy/css/color-green.css"></li>
+    <li class="cyan" data-bs-toggle="tooltip" title="Cyan" data-path="https://harnishdesign.net/demo/html/oxyy/css/color-cyan.css"></li>
+    <li class="brown" data-bs-toggle="tooltip" title="Brown" data-path="https://harnishdesign.net/demo/html/oxyy/css/color-brown.css"></li>
+  </ul>
+  <button class="btn switcher-toggle"><i class="fas fa-cog"></i></button>
+</div>
+<!-- Styles Switcher End --> 
+
+<!-- Script --> 
+<script src="https://harnishdesign.net/demo/html/oxyy/vendor/jquery/jquery.min.js"></script> 
+<script src="https://harnishdesign.net/demo/html/oxyy/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<!-- Style Switcher --> 
+<script src="https://harnishdesign.net/demo/html/oxyy/js/switcher.min.js"></script> 
+<script src="https://harnishdesign.net/demo/html/oxyy/js/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>TeamUP Dashboard</title>
+   <style>
+       body {
+           background-color: #1e1e1e;
+           color: #e0e0e0;
+           font-family: 'Arial', sans-serif;
+           margin: 0;
+           padding: 0;
+       }
+       .container {
+           display: flex;
+           width: 100%;
+           height: 100vh;
+       }
+       .sidebar {
+           width: 250px;
+           background-color: #2a2a2a;
+           padding: 30px;
+           box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+       }
+       .sidebar h1 {
+           font-size: 26px;
+           margin-bottom: 30px;
+           color: #9467FF;
+       }
+       .sidebar ul {
+           list-style: none;
+           padding: 0;
+       }
+       .sidebar li {
+           padding: 15px 0;
+       }
+       .sidebar li a {
+           color: #e0e0e0;
+           text-decoration: none;
+           font-size: 18px;
+       }
+       .sidebar li a:hover {
+           color: #9467FF;
+       }
+       .content {
+           flex: 1;
+           padding: 30px;
+           background-color: #181818;
+       }
+       .content h1 {
+           font-size: 28px;
+           margin-bottom: 20px;
+           color: #ffffff;
+       }
+       .profile-card {
+           background-color: #2a2a2a;
+           padding: 20px;
+           border-radius: 10px;
+           margin-bottom: 20px;
+           display: flex;
+           align-items: center;
+       }
+       .profile-card h2 {
+           font-size: 22px;
+           margin: 0 0 10px 10px;
+       }
+       .profile-card p {
+           margin: 5px 0;
+       }
+       .profile-card .profile-img {
+           width: 60px;
+           height: 60px;
+           border-radius: 50%;
+           background-color: #ccc;
+       }
+       .ad-list {
+           background-color: #2a2a2a;
+           padding: 20px;
+           border-radius: 10px;
+       }
+       .ad-list h3 {
+           font-size: 22px;
+           margin-bottom: 10px;
+           color: #ffffff;
+       }
+       .ad-item {
+           padding: 10px;
+           border-bottom: 1px solid #444;
+       }
+       .ad-item:last-child {
+           border-bottom: none;
+       }
+       .button {
+           background-color: #9467FF;
+           color: white;
+           padding: 12px 20px;
+           border: none;
+           border-radius: 5px;
+           cursor: pointer;
+           font-size: 16px;
+           margin-top: 10px;
+       }
+       .button:hover {
+           background-color: #7A5BFF;
+       }
+       .cta {
+           margin-top: 20px;
+           font-size: 18px;
+           color: #ffffff;
+       }
+   </style>
+</head>
+<body>
+   <div class="container">
+       <div class="sidebar">
+           <h1>TeamUP</h1>
+           <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Overview</a></li>
+               <li><a href="#">Applied Ads</a></li>
+               <li><a href="#">My Ads</a></li>
+               <li><a href="#">Favourite Ads</a></li>
+               <li><a href="#">Create an Ad</a></li>
+               <li><a href="#">Ad Filters</a></li>
+           </ul>
+       </div>
+       <div class="content">
+           <div class="profile-card">
+               <div class="profile-img"></div>
+               <div>
+                   <h2>Uwem Precious</h2>
+                   <p>Ads left today: 3</p>
+                   <p>Ads posted today: 0/3</p>
+                   <p class="cta">Complete your Profile</p>
+               </div>
+           </div>
+           <div class="ad-list">
+               <h3>Available Ads</h3>
+               <p>No ads available at the moment</p>
+               <button class="button">Create an Ad +</button>
+               <button class ="button">Ad Filters</button>
+           </div>
+       </div>
+   </div>
+</body>
+</html>
